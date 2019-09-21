@@ -31,6 +31,7 @@
 		18B90EA3233683570052CB32 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
 		18B90EA7233683810052CB32 /* khrplatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = khrplatform.h; sourceTree = "<group>"; };
 		18B90EA9233683810052CB32 /* glad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glad.h; sourceTree = "<group>"; };
+		18B90EAA233684A80052CB32 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +49,7 @@
 		18B90E8D233682710052CB32 = {
 			isa = PBXGroup;
 			children = (
+				18B90EAA233684A80052CB32 /* README.md */,
 				18B90EA5233683810052CB32 /* Ext */,
 				18B90E98233682710052CB32 /* GLBootstrap */,
 				18B90E97233682710052CB32 /* Products */,
