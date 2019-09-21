@@ -287,7 +287,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KL2JALR869;
-				HEADER_SEARCH_PATHS = "$(glfw_header)";
+				HEADER_SEARCH_PATHS = (
+					"$(glfw_header)",
+					/usr/local/include,
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(glfw_lib)",
 					/usr/local/Cellar/glfw/3.3/lib,
@@ -301,7 +304,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KL2JALR869;
-				HEADER_SEARCH_PATHS = "$(glfw_header)";
+				HEADER_SEARCH_PATHS = (
+					"$(glfw_header)",
+					/usr/local/include,
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(glfw_lib)",
 					/usr/local/Cellar/glfw/3.3/lib,
