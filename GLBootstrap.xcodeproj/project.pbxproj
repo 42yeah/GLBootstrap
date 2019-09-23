@@ -25,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		182C6FA023390E6700118E19 /* vertex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = vertex.glsl; sourceTree = "<group>"; };
+		186CDF8623390E9C0087E7D3 /* fragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = fragment.glsl; sourceTree = "<group>"; };
 		18B90E96233682710052CB32 /* GLBootstrap */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GLBootstrap; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B90E99233682710052CB32 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		18B90EA1233682B90052CB32 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../usr/local/Cellar/glfw/3.3/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		180DBBEA2338E65300C6CB3F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				182C6FA023390E6700118E19 /* vertex.glsl */,
+				186CDF8623390E9C0087E7D3 /* fragment.glsl */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
