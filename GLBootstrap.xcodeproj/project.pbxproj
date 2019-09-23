@@ -46,9 +46,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180DBBEA2338E65300C6CB3F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		18B90E8D233682710052CB32 = {
 			isa = PBXGroup;
 			children = (
+				180DBBEA2338E65300C6CB3F /* Assets */,
 				18B90EAA233684A80052CB32 /* README.md */,
 				18B90EA5233683810052CB32 /* Ext */,
 				18B90E98233682710052CB32 /* GLBootstrap */,
@@ -117,6 +125,7 @@
 				18B90E92233682710052CB32 /* Sources */,
 				18B90E93233682710052CB32 /* Frameworks */,
 				18B90E94233682710052CB32 /* CopyFiles */,
+				180DBBEB2338E65C00C6CB3F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -157,6 +166,26 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		180DBBEB2338E65C00C6CB3F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -rf ${SRCROOT}/Assets ${BUILT_PRODUCTS_DIR}\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18B90E92233682710052CB32 /* Sources */ = {
