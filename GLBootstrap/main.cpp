@@ -7,19 +7,32 @@
 //
 
 #include <iostream>
+#include <fstream>
+#include <sstream>
 #include "../Ext/glad/glad.h"
 #include <GLFW/glfw3.h>
 
 
-GLuint compile(GLuint type, std::string path) {
+GLuint compile(GLuint type, std::string source) {
     GLuint shader = glCreateShader(type);
-    const char *raw = path.c_str();
+    const char *raw = source.c_str();
     glShaderSource(shader, 1, &raw, nullptr);
     glCompileShader(shader);
     char log[512];
     glGetShaderInfoLog(shader, sizeof(log), nullptr, log);
     std::cerr << "Log: " << log << std::endl;
     return shader;
+}
+
+std::string readFile(std::string path) {
+    std::ifstream ifs(path);
+    if (!ifs.good()) {
+        return "";
+    }
+    std::stringstream ss;
+    ss << ifs.rdbuf();
+    std::string str = ss.str();
+    return str;
 }
 
 int main(int argc, const char * argv[]) {
