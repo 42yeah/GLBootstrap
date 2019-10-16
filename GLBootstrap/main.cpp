@@ -10,6 +10,7 @@
 #include <fstream>
 #include <sstream>
 #include "../Ext/glad/glad.h"
+#include "VAO.hpp"
 #include <GLFW/glfw3.h>
 
 
@@ -48,9 +49,31 @@ int main(int argc, const char * argv[]) {
     // init GL parameters...
     glClearColor(0.9f, 0.9f, 0.9f, 1.0f);
     
+    float tri[] = {
+        0.0f, 0.0f, 0.0f,
+        0.5f, 0.0f, 0.0f,
+        0.0f, 0.5f, 0.0f
+    };
+    VAO vao;
+    vao.bufferData(sizeof(tri), tri);
+    vao.vertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 3, nullptr);
+    
+    GLuint prog = glCreateProgram();
+    glAttachShader(prog, compile(GL_VERTEX_SHADER, readFile("Assets/vertex.glsl")));
+    glAttachShader(prog, compile(GL_FRAGMENT_SHADER, readFile("Assets/fragment.glsl")));
+    glLinkProgram(prog);
+    
+    float epoch = glfwGetTime();
+    
     while (!glfwWindowShouldClose(win)) {
+        float now = (glfwGetTime() - epoch);
+        std::cout << now << std::endl;
         glfwPollEvents();
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        glUseProgram(prog);
+        glUniform1f(glGetUniformLocation(prog, "time"), now);
+        vao.bind();
+        glDrawArrays(GL_TRIANGLES, 0, 3);
         glfwSwapBuffers(win);
     }
     return 0;

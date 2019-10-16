@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		189FD073233A05C2000EE9E2 /* VAO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 189FD071233A05C2000EE9E2 /* VAO.cpp */; };
 		18B90E9A233682710052CB32 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18B90E99233682710052CB32 /* main.cpp */; };
 		18B90EA2233682B90052CB32 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B90EA1233682B90052CB32 /* libglfw.3.3.dylib */; };
 		18B90EA4233683570052CB32 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 18B90EA3233683570052CB32 /* glad.c */; };
@@ -27,6 +28,8 @@
 /* Begin PBXFileReference section */
 		182C6FA023390E6700118E19 /* vertex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = vertex.glsl; sourceTree = "<group>"; };
 		186CDF8623390E9C0087E7D3 /* fragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = fragment.glsl; sourceTree = "<group>"; };
+		189FD071233A05C2000EE9E2 /* VAO.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VAO.cpp; sourceTree = "<group>"; };
+		189FD072233A05C2000EE9E2 /* VAO.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VAO.hpp; sourceTree = "<group>"; };
 		18B90E96233682710052CB32 /* GLBootstrap */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GLBootstrap; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B90E99233682710052CB32 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		18B90EA1233682B90052CB32 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../usr/local/Cellar/glfw/3.3/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
@@ -82,6 +85,8 @@
 			children = (
 				18B90E99233682710052CB32 /* main.cpp */,
 				18B90EA3233683570052CB32 /* glad.c */,
+				189FD071233A05C2000EE9E2 /* VAO.cpp */,
+				189FD072233A05C2000EE9E2 /* VAO.hpp */,
 			);
 			path = GLBootstrap;
 			sourceTree = "<group>";
@@ -146,7 +151,7 @@
 		18B90E8E233682710052CB32 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1030;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = aiofwa;
 				TargetAttributes = {
 					18B90E95233682710052CB32 = {
@@ -160,6 +165,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 18B90E8D233682710052CB32;
 			productRefGroup = 18B90E97233682710052CB32 /* Products */;
@@ -196,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189FD073233A05C2000EE9E2 /* VAO.cpp in Sources */,
 				18B90E9A233682710052CB32 /* main.cpp in Sources */,
 				18B90EA4233683570052CB32 /* glad.c in Sources */,
 			);
@@ -318,6 +325,7 @@
 		18B90E9E233682710052CB32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KL2JALR869;
 				HEADER_SEARCH_PATHS = (
@@ -335,6 +343,7 @@
 		18B90E9F233682710052CB32 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KL2JALR869;
 				HEADER_SEARCH_PATHS = (
